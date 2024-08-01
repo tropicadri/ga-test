@@ -31,7 +31,8 @@
     "test:specs": "tsx scripts/specs.ts",
     "test:types": "npm run --workspaces test:types && tsc",
     "test": "npm run test:caniuse -- --quiet && npm run test:schema && npm run test:specs && npm run test:format && npm run test:dist && npm run test --workspaces && npm run test:lint",
-    "update-drafts": "tsx scripts/update-drafts.ts"
+    "update-drafts": "tsx scripts/update-drafts.ts",
+    "baseline-by-feature": "tsx scripts/baseline-by-feature.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
@@ -60,5 +61,8 @@
     "winston": "^3.13.1",
     "yaml": "^2.4.5",
     "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.1"
   }
 }

@@ -137,7 +137,7 @@ export function computeBaseline(
  * Compute the Baseline support ("high", "low" or false, dates, and releases)
  * for a single compat key.
  */
-function calculate(compatKey: string, compat: Compat) {
+export function calculate(compatKey: string, compat: Compat) {
   const f = feature(compatKey);
 
   return {
